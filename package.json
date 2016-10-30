@@ -1,17 +1,20 @@
 {
-  "name": "botface",
+  "name": "iris",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.1.2",
     "cjson": "^0.4.0",
     "discord.js": "^10.0.1",
     "lodash": "^4.16.4",
+    "pubsub-js": "^1.5.4",
     "require-dir": "^0.3.1",
     "slack": "^7.7.3",
     "winston": "^2.2.0"
