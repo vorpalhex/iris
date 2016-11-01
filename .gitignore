@@ -1,1 +1,20 @@
+# Project Specific
 config/config.json
+node_modules/
+npm-debug.log
+log/*
+
+# Thumbnails
+._*
+
+## Ignore Mac OS Stuff
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows shortcuts
+*.lnk
