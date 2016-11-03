@@ -3,6 +3,7 @@ config/config.json
 node_modules/
 npm-debug.log
 log/*
+storage/*
 
 # Thumbnails
 ._*
