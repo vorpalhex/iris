@@ -42,7 +42,7 @@ Used to grab events quickly
 
 `message` - any message ever will appear on this bus
 `message.direct` - only direct mentions (eg either talking directly to iris or @iris)
-`presence` - presence updates
+`presence` - presence updates which follow the presence model 
 
 Methods here are:
 ```
