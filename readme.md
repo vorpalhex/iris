@@ -19,6 +19,7 @@ Current commands:
 * Google search: `google {search term}`
 * Let me google that for you search: `lmgtfy {search term}`
 * Stautus check: `status`
+* Badhourse (for the lolz): `badhorse`
 
 ### Interfaces
 
