@@ -14,6 +14,12 @@ npm start
 
 Commands are the easiest thing to contribute. These have a `register()` function which gets called to set the command up. You can listen to the event bus and prepare to take in direct commands. A good command to start with is `greeting`.
 
+Current commands:
+* Wikia search: `wikia {wikia domain} {search term}`
+* Google search: `google {search term}`
+* Let me google that for you search: `lmgtfy {search term}`
+* Stautus check: `status`
+
 ### Interfaces
 
 Interfaces are what connect Iris to a particular service such as Slack or Discord. These are complicated and implement several methods. The model interface is `slack`.
@@ -42,7 +48,7 @@ Used to grab events quickly
 
 `message` - any message ever will appear on this bus
 `message.direct` - only direct mentions (eg either talking directly to iris or @iris)
-`presence` - presence updates which follow the presence model 
+`presence` - presence updates which follow the presence model
 
 Methods here are:
 ```
