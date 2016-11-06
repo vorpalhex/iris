@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "develop": "nodemon --debug index.js"
   },
   "jshintConfig": {
     "esversion": 6,
-    "node" : true
+    "node": true
   },
   "author": "",
   "license": "ISC",
@@ -28,5 +29,8 @@
     "superagent": "^2.3.0",
     "uuid": "^2.0.3",
     "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
