@@ -1,3 +1,4 @@
+"use strict";
 const core = require(__dirname + '/lib/core');
 
 core.setup();
