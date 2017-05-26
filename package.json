@@ -27,6 +27,7 @@
     "glob": "^7.1.1",
     "lodash": "^4.16.4",
     "lokijs": "^1.4.1",
+    "modern-rcon": "^1.0.3",
     "moment": "^2.15.2",
     "pouchdb": "^6.0.7",
     "pubsub-js": "^1.5.4",
@@ -35,7 +36,7 @@
     "superagent": "^2.3.0",
     "username": "^2.2.2",
     "uuid": "^2.0.3",
-    "uws": "^0.12.0",
+    "uws": "^0.14.0",
     "winston": "^2.2.0"
   },
   "devDependencies": {
