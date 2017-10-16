@@ -32,6 +32,7 @@
     "moment": "^2.15.2",
     "node-cron": "^1.2.0",
     "pouchdb": "^6.0.7",
+    "pouchdb-node": "^6.3.4",
     "pubsub-js": "^1.5.4",
     "require-dir": "^0.3.2",
     "slack": "^7.7.3",
