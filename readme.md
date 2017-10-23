@@ -72,3 +72,59 @@ publish(eventName, object) //publish an event, object should be a model
 `lib/util/conf`
 
 Exposes a configuration object from `config/config.json`
+
+### Persistence
+
+Persistence exposes a leveldb backed PouchDB instance.
+
+*Make sure to use very unique keys.* The proposed format is as follows:
+`YourCommandName:TargetSnowflake:Action`
+
+For instance, if your command is `reminder` and your target is a particular user (as opposed to a channel or a guild/server), then you might use the following ID:
+
+`reminder:UserID:remind`
+
+ Where UserID is a given users `id` property (called a Snowflake in Discord)
+
+Despite how fancy it sounds, it's easy to use:
+
+#### Insert
+```
+db.put({
+  _id: 'mydoc',
+  title: 'Heroes'
+}).then(function (response) {
+  // handle response
+}).catch(function (err) {
+  console.log(err);
+});
+```
+
+#### Get
+```
+db.get('mydoc').then(function(doc) {
+  return db.put({
+    _id: 'mydoc',
+    _rev: doc._rev,
+    title: "Let's Dance"
+  });
+}).then(function(response) {
+  // handle response
+}).catch(function (err) {
+  console.log(err);
+});
+```
+
+#### Remove
+```
+db.get('mydoc').then(function(doc) {
+  return db.remove(doc._id, doc._rev);
+}).then(function (result) {
+  // handle result
+}).catch(function (err) {
+  console.log(err);
+});
+```
+
+#### Additional API
+Can be found [in the official API guide](https://pouchdb.com/api.html).
